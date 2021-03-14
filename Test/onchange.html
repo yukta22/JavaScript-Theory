@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onchange Demo</title>
+</head>
+<body>
+
+<select id="demo"><label>
+	<option value="0">Select Value</option>
+	
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+</select>
+
+<script type="text/javascript">
+
+
+document.getElementById("demo").addEventListener("change", function(e) {
+	
+	console.log("Value selected: "+ document.getElementById("demo").value);
+
+});
+
+
+</script>
+</body>
+</html>
